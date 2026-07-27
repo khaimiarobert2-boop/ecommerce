@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CampusSwap – Student Marketplace</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>CampusSwap</h1>
+        <p>Your campus marketplace for textbooks and more</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#browse">Browse</a></li>
+            <li><a href="#post">Post Item</a></li>
+            <li><a href="#features">Why Us</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section class="hero" id="home">
+        <h2>Buy, Sell, or Swap with Fellow Students</h2>
+        <p>Find affordable textbooks, electronics, furniture, and more – all within your campus.</p>
+        <a href="#" class="btn">Get Started</a>
+    </section>
+
+    <section class="browse" id="browse">
+        <h2>Browse Popular Items</h2>
+        <div class="card-container">
+            <div class="grid">
+                <!-- Card 1 -->
+                <div class="card">
+                    <img src="images/textbooks.png" alt="Textbooks" class="card-img">
+                    <h3>Textbooks</h3>
+                    <p>Save up to 50% on textbooks</p>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="card">
+                    <img src="images/electronics.png" alt="Electronics" class="card-img">
+                    <h3>Electronics</h3>
+                    <p>Laptops, tablets, and more</p>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="card">
+                    <img src="images/furniture.png" alt="Furniture" class="card-img">
+                    <h3>Furniture</h3>
+                    <p>Dorms essentials at great prices</p>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="card">
+                    <img src="images/clothing.png" alt="Clothing" class="card-img">
+                    <h3>Clothing & Accessories</h3>
+                    <p>Fashion and student gear</p>
+                </div>
+            </div>
+        </div>
+        </ </ </section>
+
+        <section class="post-item" id="post">
+            <h2>Post Your Item in Minutes</h2>
+            <form class="post-form" id="postForm">
+                <div class="form-group">
+                    <label for="itemName">Item Name</label>
+                    <input type="text" id="itemName" name="itemName" placeholder="Enter item name" required>
+                </div>
+                <div class="form-group">
+                    <label for="itemCategory">Category</label>
+                    <select id="itemCategory" name="itemCategory" required>
+                        <option value="">Select a category</option>
+                        <option value="textbooks">Textbooks</option>
+                        <option value="electronics">Electronics</option>
+                        <option value="furniture">Furniture</option>
+                        <option value="clothing">Clothing</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="itemPrice">Price ($)</label>
+                    <input type="number" id="itemPrice" name="itemPrice" placeholder="Enter price" min="0" step="0.01"
+                        required>
+                </div>
+                <div class="form-group">
+                    <label for="itemDescription">Description</label>
+                    <textarea id="itemDescription" name="itemDescription" placeholder="Describe your item" rows="4"
+                        required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Post Item</button>
+            </form>
+        </section>
+
+        <section class="features" id="features">
+            <h2>Why CampusSwap?</h2>
+            <div class="feature-grid">
+                <div class="feature">
+                    <div class="feature-icon">🔐</div>
+                    <h3>Trusted Community</h3>
+                    <p>Only verified students with a .edu email can join.</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">⚡</div>
+                    <h3>Easy Listing</h3>
+                    <p>Post an item in under 2 minutes with photos and details.</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">💬</div>
+                    <h3>Safe Messaging</h3>
+                    <p>Chat directly without sharing personal info.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact" id="contact">
+            <h2>Get in Touch</h2>
+            <form class="contact-form" id="contactForm">
+                <div class="form-group">
+                    <label for="contactName">Your Name</label>
+                    <input type="text" id="contactName" name="contactName" placeholder="Enter your name" required>
+                </div>
+                <div class="form-group">
+                    <label for="contactEmail">Your Email</label>
+                    <input type="email" id="contactEmail" name="contactEmail" placeholder="Enter your email" required>
+                </div>
+                <div class="form-group">
+                    <label for="contactMessage">Message</label>
+                    <textarea id="contactMessage" name="contactMessage" placeholder="Enter your message" rows="5"
+                        required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Send Message</button>
+            </form>
+            <div class="contact-info">
+                <p><strong>Email:</strong> support@campusswap.com</p>
+                <p><strong>Phone:</strong> =254794370804</p>
+                <p><strong>Address:</strong> 123 University Ave, Campus Center</p>
+            </div>
+        </section>
+
+        <footer>
+            <p>&copy; 2026 CampusSwap. All rights reserved.</p>
+            <p>Follow us on <a href="#">Facebook</a> | <a href="#">Twitter</a> | <a href="#">Instagram</a></p>
+        </footer>
+
+        <script src="script.js"></script>
+</body>
+
+</html>
